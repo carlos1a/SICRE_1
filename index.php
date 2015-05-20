@@ -29,8 +29,8 @@
 						<p>Sistema Central de Reportes<p>
 						<p> </p>
 <div class="login">
-			<form action="controlador/con_login.php" autocomplete="off">
-				<input type="text" placeholder="Nombre" name="cedula"><br>
+			<form action="controlador/session/con_login.php" autocomplete="off" method="POST">
+				<input type="text" placeholder="Cédula" name="cedula"><br>
 				<input type="password" placeholder="Clave" name="clave"><br>
 				<br>
 				<input type="submit" value="Iniciar Sesión" >
@@ -46,6 +46,8 @@
 								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
+							<p align="center"><a href="#">¿No puedes acceder a tu cuenta?</a></p>
+					 <p align="center">¿Eres nuevo usuario?<a href="vista/registrar_usuario.php"> ¡Registrate!</a></p>
 						</nav>
 </div>
 
