@@ -25,13 +25,15 @@
 
 				<!-- Header -->
 					<header id="header">
+						<div align="center">
 						<h1>SICRE</h1>
 						<p>Sistema Central de Reportes<p>
 						<p> </p>
-<div class="login">
+						</div>
+<div class="login" >
 			<form action="controlador/session/con_login.php" autocomplete="off" method="POST">
-				<input type="text" placeholder="Cédula" name="cedula"><br>
-				<input type="password" placeholder="Clave" name="clave"><br>
+				<input type="text" placeholder="Cédula" name="cedula" required><br>
+				<input type="password" placeholder="Clave" name="clave" required><br>
 				<br>
 				<input type="submit" value="Iniciar Sesión" >
 			</form>
