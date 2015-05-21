@@ -8,12 +8,13 @@ class usuario
    	private $usu_clave;
     	private $usu_telefono;
     	private $usu_correo;
+    	private $usu_dep;
           private $pgconn;
 
-    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo, $pgconn)
+    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo,$usu_dep, $pgconn)
 	{
-		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo)
-				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo')";
+		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo,usu_dep)
+				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo','$usu_dep')";
 		$consulta = pg_query($pgconn,$query) or die("Consulta errónea: ".pg_last_error());
 		return $consulta;
     }

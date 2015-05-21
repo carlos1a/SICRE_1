@@ -43,6 +43,9 @@
 				<div class="form-group">
 					Correo:<input type="email" class="form-control" placeholder="Ingresa tu Correo" name="correo" required autofocus>
 				</div>
+				<div class="form-group">
+					Departamento:<input type="text" class="form-control" placeholder="Departamento para el cual laboras" name="departamento" required autofocus>
+				</div>
 
 
 				<button class="btn btn-lg btn-primary btn-block" type="submit">ENVIAR</button>
