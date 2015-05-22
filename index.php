@@ -49,7 +49,7 @@
 								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 							<p align="center"><a href="#">¿No puedes acceder a tu cuenta?</a></p>
-					 <p align="center">¿Eres nuevo usuario?<a href="vista/registrar_usuario.php"> ¡Registrate! </a></p>
+					 <p align="center">¿Eres nuevo usuario?<a href="vista/registrar_usuario.php"> ¡Registrate!</a></p>
 						</nav>
 </div>
 
