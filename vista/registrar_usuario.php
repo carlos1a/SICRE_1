@@ -1,17 +1,34 @@
- <?php
+<?php
  	require("../bootstrap/boots.php");
-  ?>
+?>
  <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Registro de Usuario</title>
 
+
 </head>
+
 <body>
-<header align="center"><h2>Rellene el Formulario para Registrarse en el Sistema Central de Reportes <br> SICRE</h2> </header>
+
+
+
+<div class="contanier">
+<?php require("slideshow.php"); ?>
+	<?php require("menu.php"); ?>
+</div>
+
+<header align="center"><h2>Complete el Formulario para Registrarse en el Sistema Central de Reportes<br> SICRE</h2> </header>
+
+
+
+
 
 <div class="container">
+
+
+
 <div class="row">
 <div class="col-md-12" >
 	<form class="form-horizontal" id="form" action="../controlador/con_registrar_usuario.php" method="POST" >

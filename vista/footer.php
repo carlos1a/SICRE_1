@@ -1,4 +1,5 @@
-<style>#form{	padding-top: 25px;}
+<style>
+	#form{	padding-top: 25px;}
 		.footer {position: absolute; background-color: #000; width: 100%; padding-top: 2%}
 </style>
 <footer class="footer">
