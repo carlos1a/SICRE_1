@@ -56,7 +56,7 @@
 		</header>
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy;Design: <a href="http:regaze.com.ve">Regaze.com.ve</a>.</span>
+						<span class="copyright">&copy;Design: <a href="http://regaze.com.ve">Regaze.com.ve</a>.</span>
 					</footer>
 
 			</div>
