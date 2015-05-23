@@ -9,7 +9,10 @@
 
 </head>
 <body>
-<header align="center"><h2>Rellene el Formulario para Registrarse en el Sistema Central de Reportes <br> SICRE</h2> </header>
+ <?php
+ 	require("menu.php");
+  ?>
+<header align="center"><h2>Complete el Formulario para Registrarse en el Sistema Central de Reportes <br> SICRE</h2> </header>
 
 <div class="container">
 <div class="row">
