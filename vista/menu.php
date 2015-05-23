@@ -9,7 +9,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="inicio.php">Logotipo</a>
+    <a class="navbar-brand" href="inicio.php"><i>SICRE</i></a>
   </div>
 
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
@@ -53,7 +53,7 @@
 
     <ul class="nav navbar-nav navbar-right">
 
-    <li><a href="../index.php">Contacto</a></li>
+    <li><a href="#">Contacto</a></li>
     <li><a href="../index.php">Salir</a></li>
 
     </ul>

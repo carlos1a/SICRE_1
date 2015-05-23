@@ -1,20 +1,12 @@
  <?php
  	require("../bootstrap/boots.php");
   ?>
- <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Registro de Usuario</title>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+  	<meta charset="UTF-8">
 
-</head>
-<body>
- <?php
- 	require("slideshow.php");
-  ?>
- <?php
- 	require("menu.php");
-  ?>
+  <title>Registro de Usuario</title>
 <header align="center"><h2>Complete el Formulario para Registrarse en el Sistema Central de Reportes <br> SICRE</h2> </header>
 
 <div class="container">
