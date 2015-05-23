@@ -85,7 +85,7 @@
 	</div>
 	<br>
 </div>
-<?php require("footer.php"); ?>
+<?php require("../resourse/footer.php"); ?>
 
 </body>
 

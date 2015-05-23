@@ -17,7 +17,7 @@
 		$row = pg_fetch_array($columna,0,PGSQL_ASSOC);
 		$_SESSION["cedula"]=$row["cedula"];
 		$_SESSION["clave"]=$row["usu_clave"];
-		header("Location: ../V/usuario/inicio.php");
+		header("Location: ../../vista/inicio.php");
 	}
 	else{
 		$mensaje="Sus datos no coinciden";

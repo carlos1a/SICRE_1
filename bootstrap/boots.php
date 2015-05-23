@@ -1,8 +1,8 @@
  <?php
-  require("../vista/slideshow.php");
+  require("../resourse/slideshow.php");
   ?>
  <?php
-  require("../vista/menu.php");
+  require("../resourse/menu.php");
   ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
