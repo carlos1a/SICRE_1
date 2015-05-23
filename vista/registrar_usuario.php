@@ -10,6 +10,9 @@
 </head>
 <body>
  <?php
+ 	require("slideshow.php");
+  ?>
+ <?php
  	require("menu.php");
   ?>
 <header align="center"><h2>Complete el Formulario para Registrarse en el Sistema Central de Reportes <br> SICRE</h2> </header>

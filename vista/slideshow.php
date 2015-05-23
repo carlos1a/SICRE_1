@@ -7,32 +7,29 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="../css/images/sala.jpg" width="1600px"  alt="...">
       <div class="carousel-caption">
-          <h3>PRUEBA 1</h3>
+        ...
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="." alt="...">
       <div class="carousel-caption">
-          <h3>PRUEBA 2</h3>
+        ...
       </div>
     </div>
-    <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
-      <div class="carousel-caption">
-          <h3>PRUEBA 3</h3>
-      </div>
-    </div>
+    ...
   </div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
-</div> <!-- Carousel -->
+</div>

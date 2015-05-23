@@ -26,7 +26,6 @@
           <li><a href="#">Modificar Usuario</a></li>
           <li><a href="#">Bloquear Usuario</a></li>
         </ul>
-      <li><a href="#">Reporte de Fallas</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           Inventario <b class="caret"></b>
@@ -42,6 +41,7 @@
           <li><a href="#">Reasignar Equipos</a></li>
         </ul>
       </li>
+      <li><a href="#">Reporte de Fallas</a></li>
     </ul>
 
     <!--<form class="navbar-form navbar-left" role="search">
@@ -52,19 +52,10 @@
     </form>-->
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="../index.php">Salir</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Menú #2 <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Acción #1</a></li>
-          <li><a href="#">Acción #2</a></li>
-          <li><a href="#">Acción #3</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Acción #4</a></li>
-        </ul>
-      </li>
+
+    <li><a href="../index.php">Contacto</a></li>
+    <li><a href="../index.php">Salir</a></li>
+
     </ul>
   </div>
 </nav>
