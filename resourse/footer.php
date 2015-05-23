@@ -20,7 +20,7 @@
 	</div>
 	<br>
 	<div>
-		<p  class="text-success">Ministerio del Poder Popular para el Trabajo Social. <br> Departamento Tecnologico de Desarrollo y Gestion de Aplicaciones  </p>
+		<p  class="text-success">Ministerio del Poder Popular para el Proceso Social de Trabajo <br> Departamento Tecnologico de Desarrollo y Gestion de Aplicaciones  </p>
 	</div>
 	<div>
 		<p class="text-danger">copyright © 2015 design: <a href="http://www.regaze.com.ve" class="text-muted col-md-12" align="center"> regaze.com.ve</a></p>
