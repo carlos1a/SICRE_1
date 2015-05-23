@@ -11,7 +11,7 @@
 	$usu_clave_confi=	trim($_POST['clave_confi']);
 	$usu_telefono=	trim($_POST['telefono']);
 	$usu_correo=		trim($_POST['correo']);
-	$usu_dep=		trim($_POST['departamento']);
+	$dep_cod=		trim($_POST['departamento']);
 	require ('../modelo/mod_usuario.php');
 
 	$usuario = new usuario();
@@ -19,17 +19,17 @@
 		die("Las claves no coinciden");
 	}
 	else{
-			$inserto=$usuario->agregar($usu_nombre,$usu_apellido, $usu_cedula, $usu_clave,$usu_telefono,$usu_correo,$usu_dep,$pgconn);
+			$inserto=$usuario->agregar($usu_nombre,$usu_apellido, $usu_cedula, $usu_clave,$usu_telefono,$usu_correo,$dep_cod,$pgconn);
 
 			if($inserto==true){
 
-				echo "usuario registrado con exito";
-				/*$usuario=$objusuario->obtenerPorCreacion($emp_creacion,$pgconn);
-				if(pg_num_rows($empleados)>0){
-				$row=pg_fetch_row($usuario,0);
-				header("Location: ../vistas/empleados/vis_empleadoRegistrado.php?Emp=".$row[0]);*/
+
+				header("Location: ../vista/usuario_registrado.php");
+
 			}
-			else{
+
+		}
+			/*else{
 
 				echo"no resgistrado";
 				//header("Location: ../vistas/empleados/vis_empleadoRegistrado.php");
@@ -43,4 +43,3 @@
 				header("Location: ../vistas/empleados/vis_empleadoRegistrado.php");
 			}*/
 
-}

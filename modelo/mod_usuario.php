@@ -8,13 +8,22 @@ class usuario
    	private $usu_clave;
     	private $usu_telefono;
     	private $usu_correo;
-    	private $usu_dep;
+    	private $dep_cod;
           private $pgconn;
 
-    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo,$usu_dep, $pgconn)
+
+public function mostrar($pgconn){
+		$query= "SELECT usu_nombre, usu_apellido , usu_cedula, usu_telefono, dep_cod FROM usuario ORDER BY usu_cedula DESC LIMIT 1";
+		$consulta= pg_query($pgconn, $query) or die ("Consulta Errónea: ".pg_last_error());
+		if($consulta){
+			return ($consulta);
+			}// if mostrar
+		}//class mostrar
+
+    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo,$dep_cod, $pgconn)
 	{
-		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo,usu_dep)
-				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo','$usu_dep')";
+		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo,dep_cod)
+				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo','$dep_cod')";
 		$consulta = pg_query($pgconn,$query) or die("Consulta errónea: ".pg_last_error());
 		return $consulta;
     }
@@ -56,9 +65,9 @@ class usuario
 		}
 	}
 
-    public function obtener($emp_cod,$pgconn)
+    public function obtener($usu_cedula,$pgconn)
     {
- 		$query = "select E.*,C.* from empleado E LEFT JOIN cargo C ON E.car_cod=C.car_cod WHERE emp_cod='$emp_cod'";
+ 		$query = "select U.*,D.* from usuario U LEFT JOIN departamento D ON U.dep_cod=D.dep_cod WHERE usu_cedula='$usu_cedula' ";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{
@@ -66,9 +75,9 @@ class usuario
 		}
 	}
 
-    public function obtenerPorCedula($emp_cedula,$pgconn)
+    public function obtenerPorCedula($usu_cedula,$pgconn)
     {
- 		$query = "select * from empleado WHERE emp_cedula='$emp_cedula'";
+ 		$query = "select * from usuario WHERE usu_cedula='$usu_cedula'";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{
