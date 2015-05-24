@@ -14,10 +14,6 @@
 	$usu_telefono=$row["usu_telefono"];
 	$dep_cod=$row["dep_cod"];
 
-	echo $usu_nombre;
-	echo $usu_apellido;
-	echo $usu_cedula;
-	echo $usu_telefono;
-	echo $dep_cod;
+
 
 }

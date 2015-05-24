@@ -42,6 +42,20 @@
         </ul>
       </li>
       <li><a href="#">Reporte de Fallas</a></li>
+      <li><a href="#">Solicitud de Equipos</a></li>
+      <li><a href="#">Consulta de Casos</a></li>
+
+       <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Asignacion de Tareas <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Nueva Tarea</a></li>
+          <li><a href="#">Consultar Tarea</a></li>
+          <li><a href="#">Eliminar Tarea</a></li>
+        </ul>
+      </li>
+
     </ul>
 
     <!--<form class="navbar-form navbar-left" role="search">
