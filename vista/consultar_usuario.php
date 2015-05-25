@@ -1,4 +1,4 @@
- <?php
+<?php
  	require("../bootstrap/boots.php");
   ?>
 <!DOCTYPE html>
@@ -8,21 +8,32 @@
 	<title>Registro Exitoso</title>
 </head>
 <body>
-<header align="center"><h2>Sus datos se han guardado exitosamente en el Sistema Central de Reportes <br> SICRE</h2> </header>
+<p class="lead"  align="center">En esta seccion podras verificar los ultimos 10 usuarios registrado en el SICRE, asi como buscar algun usuario especifico, con solo colocar en el buscador el numero de cedula del usuario</p>
 
 
 
 <div class="form-group">
 <?php
-require("../controlador/con_usuario.php");
+require("../controlador/con_lista_usu.php");
 ?>
 
+
+<form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Ingrese cedula">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>
+<br>
+<br>
+</div>
 
 <div class="container">
 <div class="row" >
 <div class="col-md-12">
 
-<p class="lead"  align="center">Verifiquelos y sigas las instrucciones para iniciar sesion</p>
+<p class="lead"  align="center">Ultimos 10 Usuarios Registrados en el SICRE</p>
+
 				<div class="form-group">
 				<p class="text-primary" align="center">Nombre: <?php echo $usu_nombre; ?></p>
 				</div>
@@ -52,12 +63,8 @@ require("../controlador/con_usuario.php");
 
 	</div>
 	</div>
-	<br>
-
-	<p class="text-info" align="center">Si sus datos son correctos precione <a href="../index.php">SALIR</a> para que puedas iniciar sesion e ingresar al Sistema Central de Reportes</p>
-	<p class="text-info" align="center">De lo contrario, por favor, comuniquese con el Departamento de Tecnologia, a traves de <a href="">CONTACTO</a></p>
-
-</div>
+	</div>
+<br>
 <br>
 
 

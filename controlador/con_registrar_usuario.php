@@ -12,6 +12,7 @@
 	$usu_telefono=	trim($_POST['telefono']);
 	$usu_correo=		trim($_POST['correo']);
 	$dep_cod=		trim($_POST['departamento']);
+	$per_cod=		trim($_POST['cargo']);
 	require ('../modelo/mod_usuario.php');
 
 	$usuario = new usuario();
@@ -19,7 +20,7 @@
 		die("Las claves no coinciden");
 	}
 	else{
-			$inserto=$usuario->agregar($usu_nombre,$usu_apellido, $usu_cedula, $usu_clave,$usu_telefono,$usu_correo,$dep_cod,$pgconn);
+			$inserto=$usuario->agregar($usu_nombre,$usu_apellido, $usu_cedula, $usu_clave,$usu_telefono,$usu_correo,$dep_cod, $per_cod, $pgconn);
 
 			if($inserto==true){
 

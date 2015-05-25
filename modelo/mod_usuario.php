@@ -9,21 +9,22 @@ class usuario
     	private $usu_telefono;
     	private $usu_correo;
     	private $dep_cod;
+    	private $per_cod;
           private $pgconn;
 
 
 public function mostrar($pgconn){
-		$query= "SELECT usu_nombre, usu_apellido , usu_cedula, usu_telefono, dep_cod FROM usuario ORDER BY usu_cedula DESC LIMIT 1";
+		$query= "SELECT usu_nombre, usu_apellido , usu_cedula, usu_telefono, dep_cod, per_cod FROM usuario ORDER BY usu_cedula DESC LIMIT 1";
 		$consulta= pg_query($pgconn, $query) or die ("Consulta Errónea: ".pg_last_error());
 		if($consulta){
 			return ($consulta);
 			}// if mostrar
 		}//class mostrar
 
-    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo,$dep_cod, $pgconn)
+    public function agregar($usu_nombre, $usu_apellido, $usu_cedula, $usu_clave, $usu_telefono,$usu_correo,$dep_cod, $per_cod, $pgconn)
 	{
-		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo,dep_cod)
-				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo','$dep_cod')";
+		$query = "INSERT INTO usuario (usu_nombre,usu_apellido, usu_cedula, usu_clave, usu_telefono,usu_correo,dep_cod, per_cod)
+				VALUES('$usu_nombre','$usu_apellido', '$usu_cedula', MD5('$usu_clave'), '$usu_telefono','$usu_correo','$dep_cod', '$per_cod')";
 		$consulta = pg_query($pgconn,$query) or die("Consulta errónea: ".pg_last_error());
 		return $consulta;
     }
@@ -109,7 +110,7 @@ public function mostrar($pgconn){
 
     public function listar($pgconn)
     {
- 		$query = "SELECT * FROM empleado";
+ 		$query = "SELECT * FROM usuario ORDER BY usu_cedula DESC LIMIT 10";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{

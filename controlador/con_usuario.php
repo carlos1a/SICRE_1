@@ -5,10 +5,9 @@
 
 	require('../modelo/mod_usuario.php');
 	$usuario = new usuario();
-	$consulta=$usuario->listar($pgconn);
-
-	for($i=0;$i<pg_num_rows($consulta);$i++){
-	$row = pg_fetch_array($consulta,$i,PGSQL_ASSOC);
+	$consulta=$usuario->mostrar($pgconn);
+	if(pg_num_rows($consulta)>0){
+	$row = pg_fetch_array($consulta,0,PGSQL_ASSOC);
 	$usu_nombre=$row["usu_nombre"];
 	$usu_apellido=$row["usu_apellido"];
 	$usu_cedula=$row["usu_cedula"];

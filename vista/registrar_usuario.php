@@ -76,6 +76,25 @@
 							</select>
 						</div>
 				</div>
+
+				<div class="form-group">
+					<label for="" class="control-label col-md-4">Cargo:</label>
+						<div class="col-md-6">
+							<select class="form-control" name="cargo" required >
+							        <option  selected="selected" value="0">Selecione</option>
+							        <option value="1">Administrador</option>
+							        <option value="2">Director</option>
+							        <option value="3">Gerente</option>
+							        <option value="3">Coordinador</option>
+							        <option value="3">Supervisor</option>
+							        <option value="3">Especialista</option>
+							        <option value="3">Gestor</option>
+							        <option value="3">Analista</option>
+							        <option value="3">Ejecutivo</option>
+							        <option value="3">Asistente</option>
+							</select>
+						</div>
+				</div>
 				<div class="col-md-2 col-md-offset-6">
 					<button class="btn btn-lg btn-primary btn-block " type="submit">ENVIAR</button>
 				</div>
