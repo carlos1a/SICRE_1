@@ -22,7 +22,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="registrar_usuario.php">Registrar Usuario</a></li>
-          <li><a href="#">Consultar Usuarios</a></li>
+          <li><a href="consultar_usuario.php">Consultar Usuarios</a></li>
           <li><a href="#">Modificar Usuario</a></li>
           <li><a href="#">Bloquear Usuario</a></li>
         </ul>
