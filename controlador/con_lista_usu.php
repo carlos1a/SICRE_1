@@ -15,6 +15,4 @@
 	$usu_telefono=$row["usu_telefono"];
 	$dep_cod=$row["dep_cod"];
 	$per_cod=$row["per_cod"];
-
-
 }
