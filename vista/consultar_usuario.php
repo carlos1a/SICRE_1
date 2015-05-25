@@ -33,9 +33,9 @@ require("../controlador/con_lista_usu.php");
 <div class="col-md-12">
 
 <p class="lead"  align="center">Ultimos 10 Usuarios Registrados en el SICRE</p>
-
+<?php foreach ($usu_nombres as $usu_nombre) { ?>
 				<div class="form-group">
-				<p class="text-primary" align="center">Nombre: <?php echo $usu_nombre; ?></p>
+				<p class="text-primary" align="center">Nombre:  <?echo $usu_nombre; ?></p>
 				</div>
 
 				<div class="form-group">
@@ -59,11 +59,12 @@ require("../controlador/con_lista_usu.php");
 				</div>
 
 
+	<?php } ?>
 
+	</div>
+	</div>
+	</div>
 
-	</div>
-	</div>
-	</div>
 <br>
 <br>
 

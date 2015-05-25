@@ -52,6 +52,7 @@ require("../controlador/con_usuario.php");
 
 	</div>
 	</div>
+
 	<br>
 
 	<p class="text-info" align="center">Si sus datos son correctos precione <a href="../index.php">SALIR</a> para que puedas iniciar sesion e ingresar al Sistema Central de Reportes</p>
