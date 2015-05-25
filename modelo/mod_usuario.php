@@ -110,7 +110,7 @@ public function mostrar($pgconn){
 
     public function listar($pgconn)
     {
- 		$query = "SELECT * FROM usuario ORDER BY usu_cedula DESC LIMIT 10";
+ 		$query = "SELECT * FROM usuario ORDER BY usu_cedula ASC LIMIT 10";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{
