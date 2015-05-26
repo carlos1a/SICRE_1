@@ -17,42 +17,42 @@
 				<div class="form-group">
 					<label for="cedula" class="control-label col-md-4">Cedula:</label>
 						<div class="col-md-6">
-							<input type="text" class="form-control" placeholder="Ingresa tu Cedula" name="cedula" required autofocus>
+							<input type="text" title="Su cedula debe contener entre 7 y  8 numeros sin espacios ni letras" pattern="[0-9]{7,8}" class="form-control" placeholder="Ingresa tu Cedula" name="cedula" required autofocus maxlength="8">
 						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="" class="control-label col-md-4">Nombre:</label>
 						<div class="col-md-6">
-							<input type="text" class="form-control" placeholder="Ingresa tu Nombre" name="nombre" required autofocus>
+							<input type="text" title="Su nombre No puede poseer espacios en blancos ni caracteres especiales" class="form-control" pattern="[a-zA-Z]+" placeholder="Ingresa tu Nombre" name="nombre" required autofocus maxlength="15">
 						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="" class="control-label col-md-4">Apellido:</label>
 						<div class="col-md-6">
-							<input type="text" class="form-control" placeholder="Ingresa tu Apellido" name="apellido" required autofocus>
+							<input type="text" title="Su Apellido No puede poseer espacios en blancos ni caracteres especiales" class="form-control" pattern="[a-zA-Z]+" placeholder="Ingresa tu Apellido" name="apellido" required autofocus maxlength="15">
 						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="" class="control-label col-md-4">Clave:</label>
 						<div class="col-md-6">
-							<input type="password" class="form-control" placeholder="Ingresa tu Clave" name="clave" required autofocus>
+							<input type="password" title="Su clave debe contener letras, numeros y al menos un caracter especial y debe " class="form-control"  pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]{6,15}" placeholder="Ingresa tu Clave" name="clave" required autofocus maxlength="15">
 						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="" class="control-label col-md-4">Confirma tu Clave:</label>
 						<div class="col-md-6">
-							<input type="password" class="form-control" placeholder="Confirma tu Clave" name="clave_confi" required autofocus>
+							<input type="password" title="Su clave debe contener letras, numeros y al menos un caracter especial y debe " class="form-control"  pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]{6,15}" placeholder="Confirma tu Clave" name="clave_confi" required autofocus maxlength="15">
 						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="" class="control-label col-md-4">Telefono:</label>
 						<div  class="col-md-6">
-							<input type="text" class="form-control" placeholder="Ingresa tu Telefono" name="telefono" required autofocus>
+							<input type="text" title="Su telefono debe contener 10 numeros " class="form-control" pattern="[0-9]{10}" placeholder="Ingresa tu Telefono 4161234567" name="telefono" required autofocus maxlength="10">
 						</div>
 				</div>
 

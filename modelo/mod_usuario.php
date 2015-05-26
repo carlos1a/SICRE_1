@@ -14,7 +14,7 @@ class usuario
 
 
 public function mostrar($pgconn){
-		$query= "SELECT usu_nombre, usu_apellido , usu_cedula, usu_telefono, dep_cod, per_cod FROM usuario ORDER BY usu_cedula DESC LIMIT 1";
+		$query= "SELECT usu_nombre, usu_apellido , usu_cedula, usu_telefono, dep_cod, per_cod FROM usuario ORDER BY usu_cedula desc LIMIT 1";
 		$consulta= pg_query($pgconn, $query) or die ("Consulta Errónea: ".pg_last_error());
 		if($consulta){
 			return ($consulta);
@@ -76,7 +76,7 @@ public function mostrar($pgconn){
 		}
 	}
 
-    public function obtenerPorCedula($usu_cedula,$pgconn)
+    public function buscar($usu_cedula,$pgconn)
     {
  		$query = "select * from usuario WHERE usu_cedula='$usu_cedula'";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
@@ -110,7 +110,7 @@ public function mostrar($pgconn){
 
     public function listar($pgconn)
     {
- 		$query = "SELECT * FROM usuario ORDER BY usu_cedula ASC LIMIT 10";
+ 		$query = "SELECT P.per_nombre as perfil, U.* , D.dep_nombre as dep FROM usuario U join departamento D on U.dep_cod=D.dep_cod  join perfil P on U.per_cod=P.per_cod ORDER BY usu_cedula ASC LIMIT 10";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{

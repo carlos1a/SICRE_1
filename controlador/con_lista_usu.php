@@ -8,11 +8,13 @@
 	$consulta=$usuario->listar($pgconn);
 
 	for($i=0;$i<pg_num_rows($consulta);$i++){
+
 	$row = pg_fetch_array($consulta,$i,PGSQL_ASSOC);
-	$usu_nombres[$i]=$row["usu_nombre"];
-	$usu_apellido=$row["usu_apellido"];
-	$usu_cedula=$row["usu_cedula"];
-	$usu_telefono=$row["usu_telefono"];
-	$dep_cod=$row["dep_cod"];
-	$per_cod=$row["per_cod"];
+	$usu_nombre [$i] =$row["usu_nombre"];
+	$usu_apellido[$i]=$row["usu_apellido"];
+	$usu_cedula[$i]=$row["usu_cedula"];
+	$usu_telefono[$i]=$row["usu_telefono"];
+	$dep_cod[$i]=$row["dep"];
+	$per_cod[$i]=$row["perfil"];
+
 }

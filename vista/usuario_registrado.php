@@ -2,10 +2,10 @@
  	require("../bootstrap/boots.php");
   ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Registro Exitoso</title>
+	<title>Usuario registrado</title>
 </head>
 <body>
 <header align="center"><h2>Sus datos se han guardado exitosamente en el Sistema Central de Reportes <br> SICRE</h2> </header>
