@@ -8,8 +8,9 @@
 	<title>Consulta de Usuario</title>
 </head>
 <body>
+<div class="container">
 <p class="lead"  align="center">En esta seccion podras verificar los ultimos 10 usuarios registrado en el SICRE, asi como buscar algun usuario especifico, con solo colocar en el buscador el numero de cedula del usuario</p>
-
+</div>
 
 
 <div class="form-group">
