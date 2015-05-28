@@ -33,7 +33,6 @@ require("../controlador/con_lista_usu.php");
 <div class="col-md-12">
 
 <p class="lead"  align="center">Ultimos 10 Usuarios Registrados en el SICRE</p>
-<<<<<<< HEAD
 <br>
 <!--inicio de la tabla-->
 <div class="panel panel-default">
@@ -69,35 +68,7 @@ require("../controlador/con_lista_usu.php");
 <?php } ?>
 </table><!--fin de la tabla-->
 </div>
-=======
 
-				<div class="form-group">
-				<p class="text-primary" align="center">Nombre:  <?php echo $usu_nombre; ?></p>
-				</div>
-
-				<div class="form-group">
-					<p class="text-primary" align="center">Apellido: <?php echo $usu_apellido; ?></p>
-				</div>
-
-				<div class="form-group">
-					<p class="text-primary" align="center">Cedula: <?php echo $usu_cedula; ?></p>
-				</div>
-
-				<div class="form-group">
-					<p class="text-primary" align="center">Telefono: <?php echo $usu_telefono; ?></p>
-				</div>
-
-				<div class="form-group">
-					<p class="text-primary" align="center">Departamento: <?php echo $dep_cod; ?></p>
-				</div>
-
-				<div class="form-group">
-					<p class="text-primary" align="center">Cargo: <?php echo $per_cod; ?></p>
-				</div>
-
-
-
->>>>>>> origin/master
 
 	</div>
 	</div>
