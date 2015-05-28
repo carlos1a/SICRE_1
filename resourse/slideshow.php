@@ -9,13 +9,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../css/images/sala.jpg" width="1600px"  alt="...">
+      <img src="../css/images/logofp.jpg" width="1400px"  alt="...">
       <div class="carousel-caption">
 
       </div>
     </div>
     <div class="item">
-      <img src="../css/images/sala.jpg" width="1600px" alt="...">
+      <img src="../css/images/logofp.jpg" width="1400px" alt="...">
       <div class="carousel-caption">
 
       </div>

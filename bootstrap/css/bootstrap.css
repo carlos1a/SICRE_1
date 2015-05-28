@@ -3422,11 +3422,15 @@ tbody.collapse.in {
   border-left: 4px solid transparent;
 }
 .dropup,
-.dropdown {
+.dropdown #dropdown {
   position: relative;
+  display: none;
 }
 .dropdown-toggle:focus {
   outline: 0;
+}
+#dropdown:hover{
+  display: block;
 }
 .dropdown-menu {
   position: absolute;
