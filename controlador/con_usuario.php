@@ -3,9 +3,11 @@
 	$conexion = new Connex();
 	$pgconn=$conexion->conectar();
 
+	$usu_cedula=	trim($_POST['cedula']);
+
 	require('../modelo/mod_usuario.php');
 	$usuario = new usuario();
-	$consulta=$usuario->mostrar($pgconn);
+	$consulta=$usuario->obtener($usu_cedula, $pgconn);
 	if(pg_num_rows($consulta)>0){
 	$row = pg_fetch_array($consulta,0,PGSQL_ASSOC);
 	$usu_nombre=$row["usu_nombre"];
