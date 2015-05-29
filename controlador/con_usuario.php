@@ -2,9 +2,11 @@
 	require_once('../modelo/mod_connex.php');
 	$conexion = new Connex();
 	$pgconn=$conexion->conectar();
-
-	$usu_cedula=	trim($_POST['cedula']);
-
+if (isset($_POST['cedula'])) {
+$usu_cedula=	trim($_POST['cedula']);
+}else{
+$usu_cedula="";
+}
 	require('../modelo/mod_usuario.php');
 	$usuario = new usuario();
 	$consulta=$usuario->obtener($usu_cedula, $pgconn);
@@ -14,8 +16,8 @@
 	$usu_apellido=$row["usu_apellido"];
 	$usu_cedula=$row["usu_cedula"];
 	$usu_telefono=$row["usu_telefono"];
-	$dep_cod=$row["dep_cod"];
-	$per_cod=$row["per_cod"];
+	$dep_cod=$row["dep_nombre"];
+	$per_cod=$row["per_nombre"];
 
 
 }

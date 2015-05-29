@@ -10,7 +10,7 @@ class Connex{
     function Connex()
     {
         $this->user = 'postgres';
-        $this->clave='Bripfani1a';
+        $this->clave='root';
         $this->servidor ='localhost';
         $this->db = 'sicre';
         $this->port = 5432;

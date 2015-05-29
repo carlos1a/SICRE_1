@@ -68,7 +68,7 @@ public function mostrar($pgconn){
 
     public function obtener($usu_cedula,$pgconn)
     {
- 		$query = "SELECT U.*,D.* from usuario U LEFT JOIN departamento D ON U.dep_cod=D.dep_cod WHERE usu_cedula='$usu_cedula' ";
+ 		$query = "SELECT U.*,D.*, P.* from usuario U JOIN departamento D ON U.dep_cod=D.dep_cod join perfil P on U.per_cod=P.per_cod WHERE usu_cedula='$usu_cedula' ";
 		$consulta = pg_query($query) or die("Consulta errónea: ".pg_last_error());
 		if ($consulta)
 		{
