@@ -1,15 +1,10 @@
-<?php
-	require_once('../modelo/mod_connex.php');
+<?php  	require_once('../modelo/mod_connex.php');
 	$conexion = new Connex();
 	$pgconn=$conexion->conectar();
-if (isset($_POST['cedula'])) {
-$usu_cedula=	trim($_POST['cedula']);
-}else{
-$usu_cedula="";
-}
+
 	require('../modelo/mod_usuario.php');
 	$usuario = new usuario();
-	$consulta=$usuario->obtener_cedula($usu_cedula, $pgconn);
+	$consulta=$usuario->obtener( $pgconn);
 	if(pg_num_rows($consulta)>0){
 	$row = pg_fetch_array($consulta,0,PGSQL_ASSOC);
 	$usu_nombre=$row["usu_nombre"];

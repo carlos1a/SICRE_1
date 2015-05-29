@@ -14,7 +14,7 @@
 
 <div class="form-group">
 <?php
-require("../controlador/con_usuario.php");
+require("../controlador/con_usuario_registrado.php");
 ?>
 
 
