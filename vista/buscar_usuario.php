@@ -47,6 +47,7 @@ require("../controlador/con_usuario.php");
             <th>Telefono</th>
             <th>Departamento</th>
             <th>Cargo</th>
+            <th>Modificar</th>
         </tr>
     </thead>
 

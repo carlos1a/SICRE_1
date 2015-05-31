@@ -17,14 +17,6 @@
 <?php
 require("../controlador/con_lista_usu.php");
 ?>
-
-
-<form class="navbar-form navbar-right" role="search" method="POST" action="../controlador/con_usuario.php">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Ingrese cedula" name="cedula">
-        </div>
-        <button type="submit" class="btn btn-default">Buscar</button>
-      </form>
 <br>
 <br>
 </div>
