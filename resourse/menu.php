@@ -42,9 +42,17 @@
           <li><a href="#">Reasignar Equipos</a></li>
         </ul>
       </li>
-      <li><a href="#">Reporte de Fallas</a></li>
+     <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Fallas <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Reportar Falla</a></li>
+          <li><a href="#">Consultar Caso</a></li>
+
+        </ul>
+      </li>
       <li><a href="#">Solicitud de Equipos</a></li>
-      <li><a href="#">Consulta de Casos</a></li>
 
        <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
