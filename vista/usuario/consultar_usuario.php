@@ -33,7 +33,7 @@ require("../../controlador/con_lista_usu.php");
     <thead>
         <tr>
 
-            <th>Nombre</th>
+            <th>Nombre </th>
             <th>Apellido</th>
             <th>Cedula</th>
             <th>Telefono</th>
@@ -49,17 +49,23 @@ require("../../controlador/con_lista_usu.php");
  ?>
     <tbody>
         <tr>
-            <td> <?php echo $usu_nombre [$i] ; ?></td>
+            <td> <?php echo $usu_nombre [$i] ; ?> </td>
             <td><?php echo $usu_apellido[$i]; ?></td>
             <td><?php echo $usu_cedula[$i]; ?></td>
             <td><?php echo $usu_telefono[$i]; ?></td>
             <td><?php echo $dep_cod[$i]; ?></td>
-            <td><?php echo $per_cod[$i]; ?></td>
+            <td><?php echo $per_cod[$i]; ?> </td>
+            <td> <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></td>
+
+
         </tr>
     </tbody>
 
 <?php } ?>
 </table><!--fin de la tabla-->
+
 </div>
 
 
