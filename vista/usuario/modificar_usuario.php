@@ -1,10 +1,6 @@
 <?php
  	require("../../bootstrap/boots.php");
-    if (!isset($_GET['param_id'])) {
-    $cedula=base64_decode( $_GET['param_id']);
-    }else{
 
-    }
 
   ?>
 <!DOCTYPE html>
@@ -21,14 +17,12 @@
 
 <div class="form-group">
 <?php
-require("../../controlador/con_usuario.php");
+require("../../controlador/con_usuario2.php");
 ?>
 
 
 <form class="navbar-form navbar-right" role="search" method="POST" action="#">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Ingrese cedula" name="cedula">
-        </div>
+
 
 
 <br>
@@ -37,7 +31,8 @@ require("../../controlador/con_usuario.php");
 
 <div class="container">
 <div class="row" >
-<div class="col-md-12">
+    <div class="col-md-4"></div>s
+<div class="col-md-4">
 
 <p class="lead"  align="center"></p>
 <br>
@@ -49,19 +44,19 @@ require("../../controlador/con_usuario.php");
 
  ?>
      <div class="form-group">
-          <input type="text" class="form-control"  name="nombre" value="<?php echo $usu_nombre ; ?>">
+        Nombre:   <input type="text" class="form-control"  name="nombre" value="<?php echo $usu_nombre ; ?>">
         </div>
          <div class="form-group">
-          <input type="text" class="form-control"  name="apellido" value="   <?php echo $usu_apellido; ?>">
+         Apellido:  <input type="text" class="form-control"  name="apellido" value="   <?php echo $usu_apellido; ?>">
         </div>
          <div class="form-group">
-          <input type="text" class="form-control"  name="telefono" value="  <?php echo $usu_telefono; ?>">
+         Teléfono: <input type="text" class="form-control"  name="telefono" value="  <?php echo $usu_telefono; ?>">
         </div>
          <div class="form-group">
-          <input type="text" class="form-control"  name="departamento" value="  <?php echo $dep_cod; ?>">
+          Departamento<input type="text" class="form-control"  name="departamento" value="  <?php echo $dep_cod; ?>">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control"  name="perfil" value="    <?php echo $per_cod; ?>">
+         Perfil: <input type="text" class="form-control"  name="perfil" value="    <?php echo $per_cod; ?>">
         </div>
 
 
@@ -79,6 +74,6 @@ require("../../controlador/con_usuario.php");
 <br>
 
 
-<?php require("../resourse/footer.php"); ?>
+<?php require("../../resourse/footer.php"); ?>
 </body>
 </html>
