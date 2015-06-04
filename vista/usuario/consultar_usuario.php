@@ -1,4 +1,5 @@
 <?php
+
  	require("../../bootstrap/boots.php");
   ?>
 <!DOCTYPE html>
