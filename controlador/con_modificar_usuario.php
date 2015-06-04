@@ -7,8 +7,6 @@
 	$usu_nombre=	trim($_POST['nombre']);
 	$usu_apellido=	trim($_POST['apellido']);
 	$usu_cedula=		trim($_POST['cedula']);
-	$usu_clave=		trim($_POST['clave']);
-	$usu_clave_confi=	trim($_POST['clave_confi']);
 	$usu_telefono=	trim($_POST['telefono']);
 	$usu_correo=		trim($_POST['correo']);
 	$dep_cod=		trim($_POST['departamento']);
@@ -16,18 +14,15 @@
 	require ('../modelo/mod_usuario.php');
 
 	$usuario = new usuario();
-	if($usu_clave!=$usu_clave_confi){
-		die("Las claves no coinciden");
-	}
-	else{
-			$inserto=$usuario->agregar($usu_nombre,$usu_apellido, $usu_cedula, $usu_clave,$usu_telefono,$usu_correo,$dep_cod, $per_cod, $pgconn);
+
+			$inserto=$usuario->modificar($usu_nombre,$usu_apellido, $usu_cedula,$usu_telefono,$usu_correo,$dep_cod, $per_cod, $pgconn);
 
 			if($inserto==true){
 
 
-				header("Location: ../vista/usuario/usuario_registrado.php");
+				header("Location: ../vista/usuario/consultar_usuario.php");
 
-			}
+
 
 		}
 			/*else{

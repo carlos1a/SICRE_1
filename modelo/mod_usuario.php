@@ -30,13 +30,10 @@ public function mostrar($pgconn){
     }
 
 
-    public function modificar($emp_nombre,$emp_apellido,$emp_cedula,$emp_telefono,$emp_turno,$emp_correo,$emp_login,$emp_clave,$car_cod,$emp_cod,$pgconn)
+    public function modificar($usu_nombre,$usu_apellido, $usu_cedula,$usu_telefono,$usu_correo,$dep_cod, $per_cod, $pgconn)
 	{
-		$query = "UPDATE empleado SET emp_nombre='$emp_nombre',emp_apellido='$emp_apellido',
-		         emp_cedula='$emp_cedula',emp_telefono='$emp_telefono',emp_turno='$emp_turno',
-				 emp_correo='$emp_correo',emp_login='$emp_login',
-				 emp_clave=MD5('$emp_clave'),car_cod='$car_cod'
-				 WHERE emp_cod='$emp_cod'";
+		$query = "UPDATE usuario SET usu_nombre='$usu_nombre',usu_apellido='$usu_apellido', usu_telefono='$usu_telefono', usu_correo='$usu_correo'
+				 WHERE usu_cedula='$usu_cedula'";
 		$rec = pg_query($pgconn,$query) or die("Consulta errónea: ".pg_last_error());
 		if ($rec)
         {

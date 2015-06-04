@@ -21,7 +21,7 @@ require("../../controlador/con_usuario2.php");
 ?>
 
 
-<form class="navbar-form navbar-right" role="search" method="POST" action="#">
+<form class="navbar-form navbar-right" role="search" method="POST" action="../../controlador/con_modificar_usuario.php">
 
 
 
@@ -31,7 +31,7 @@ require("../../controlador/con_usuario2.php");
 
 <div class="container">
 <div class="row" >
-    <div class="col-md-4"></div>s
+    <div class="col-md-4"></div>
 <div class="col-md-4">
 
 <p class="lead"  align="center"></p>
@@ -43,6 +43,7 @@ require("../../controlador/con_usuario2.php");
 	# code...
 
  ?>
+ <input type="hidden" name="cedula" value="<?php echo $usu_cedula; ?>">
      <div class="form-group">
         Nombre:   <input type="text" class="form-control"  name="nombre" value="<?php echo $usu_nombre ; ?>">
         </div>
