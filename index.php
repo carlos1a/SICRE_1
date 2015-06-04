@@ -41,15 +41,15 @@
 
 <div>
 						<nav>
-							<ul>
+							<!--<ul>
 								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
+							</ul>-->
 							<p align="center"><a href="#">¿No puedes acceder a tu cuenta?</a></p>
-					 <p align="center">¿Eres nuevo usuario?<a href="vista/registrar_usuario.php"> ¡Registrate!</a></p>
+					 <p align="center">¿Eres nuevo usuario? <a href="vista/usuario/registrar_usuario.php"> ¡Registrate!</a></p>
 						</nav>
 </div>
 

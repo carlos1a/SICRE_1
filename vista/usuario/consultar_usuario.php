@@ -1,5 +1,5 @@
 <?php
- 	require("../bootstrap/boots.php");
+ 	require("../../bootstrap/boots.php");
   ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +15,7 @@
 
 <div class="form-group">
 <?php
-require("../controlador/con_lista_usu.php");
+require("../../controlador/con_lista_usu.php");
 ?>
 <br>
 <br>
@@ -71,6 +71,6 @@ require("../controlador/con_lista_usu.php");
 <br>
 
 
-<?php require("../resourse/footer.php"); ?>
+<?php require("../../resourse/footer.php"); ?>
 </body>
 </html>

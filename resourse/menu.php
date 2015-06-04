@@ -9,7 +9,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="inicio.php"><i>SICRE</i></a>
+    <a class="navbar-brand" href="../usuario/inicio.php"><i>SICRE</i></a>
   </div>
 
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
@@ -21,9 +21,9 @@
           Usuario <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="registrar_usuario.php">Registrar Usuario</a></li>
-          <li><a href="consultar_usuario.php">Consultar Usuarios</a></li>
-           <li><a href="buscar_usuario.php">Buscar Usuario</a></li>
+          <li><a href="../usuario/registrar_usuario.php">Registrar Usuario</a></li>
+          <li><a href="../usuario/consultar_usuario.php">Consultar Usuarios</a></li>
+           <li><a href="../usuario/buscar_usuario.php">Buscar Usuario</a></li>
           <li><a href="#">Modificar Usuario</a></li>
           <li><a href="#">Bloquear Usuario</a></li>
         </ul>
@@ -32,7 +32,7 @@
           Inventario <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Registrar Equipo</a></li>
+          <li><a href="../inventario/registrar_equipo.php">Registrar Equipo</a></li>
           <li><a href="#">Consultar Inventario</a></li>
           <li><a href="#">Consultar Asignados</a></li>
           <li class="divider"></li>
@@ -77,7 +77,7 @@
     <ul class="nav navbar-nav navbar-right">
 
     <li><a href="#">Contacto</a></li>
-    <li><a href="../index.php">Salir</a></li>
+    <li><a href="../../index.php">Salir</a></li>
 
     </ul>
   </div>

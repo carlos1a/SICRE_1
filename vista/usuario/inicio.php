@@ -1,5 +1,5 @@
 <?php
- 	require("../bootstrap/boots.php");
+ 	require("../../bootstrap/boots.php");
   ?>
    <!DOCTYPE html>
   <html lang="es">
@@ -41,7 +41,7 @@
 	</div>
 	<br>
 </div>
-<?php require("../resourse/footer.php"); ?>
+<?php require("../../resourse/footer.php"); ?>
 
 </body>
 

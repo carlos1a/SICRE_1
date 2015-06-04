@@ -1,9 +1,9 @@
 <?php
-	require_once('../modelo/mod_connex.php');
+	require_once('../../modelo/mod_connex.php');
 	$conexion = new Connex();
 	$pgconn=$conexion->conectar();
 
-	require('../modelo/mod_usuario.php');
+	require('../../modelo/mod_usuario.php');
 	$usuario = new usuario();
 	$consulta=$usuario->listar($pgconn);
 
