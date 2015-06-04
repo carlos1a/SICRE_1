@@ -55,9 +55,10 @@ require("../../controlador/con_lista_usu.php");
             <td><?php echo $usu_telefono[$i]; ?></td>
             <td><?php echo $dep_cod[$i]; ?></td>
             <td><?php echo $per_cod[$i]; ?> </td>
-            <td> <button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-</button></td>
+            <td> <a href="modificar_usuario.php?param_id=<?php echo base64_encode($usu_cedula[$i]);?>">
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button></a></td>
 
 
         </tr>
