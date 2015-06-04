@@ -15,8 +15,9 @@
 	if(pg_num_rows ($columna)>0){
 		session_start();
 		$row = pg_fetch_array($columna,0,PGSQL_ASSOC);
-		$_SESSION["cedula"]=$row["cedula"];
+		$_SESSION["cedula"]=$row["usu_cedula"];
 		$_SESSION["clave"]=$row["usu_clave"];
+		$_SESSION['perfil']=$row["per_id"];
 		header("Location: ../../vista/usuario/inicio.php");
 	}
 	else{
