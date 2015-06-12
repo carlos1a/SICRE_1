@@ -1,5 +1,6 @@
 <?php
  	require("../../bootstrap/boots.php");
+ 	 require("../../controlador/session/sesion.php");
   ?>
    <!DOCTYPE html>
   <html lang="es">
